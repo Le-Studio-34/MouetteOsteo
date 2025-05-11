@@ -3,17 +3,55 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* muss ich noch anpassen */
+  --beige100: #ebe5d6; 
+  --beige200: #d8cbb0;
+  --beige300: #c2aa82;
+  --beige400: #af8e60;
+  --beige500: #9d7a50;
+  --beige600: #896545;
+  --beige700: #6f4e39;
+  --beige800: #5e4235;
+  --beige900: #523a31;
+  --beige950: #2e1f1a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-beige100: var(--beige100);
+  --color-beige200: var(--beige200);
+  --color-beige300: var(--beige300);
+  --color-beige400: var(--beige400);
+  --color-beige500: var(--beige500);
+  --color-beige600: var(--beige600);
+  --color-beige700: var(--beige700);
+  --color-beige800: var(--beige800);
+  --color-beige900: var(--beige900);
+  --color-beige950: var(--beige950);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--beige950);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  @apply text-4xl;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+section {
+  @apply pt-12 pb-5 px-5;
+}
+
+button {
+  @apply rounded-2xl bg-[#d8cbb0] px-8 py-4;
 }
